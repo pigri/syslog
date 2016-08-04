@@ -7,4 +7,4 @@ fi
 
 sed -i "s/{{TOKEN}}/$TOKEN/" /etc/rsyslog.d/50-default.conf
 
-exec /usr/sbin/rsyslogd
+/usr/sbin/rsyslogd -n
